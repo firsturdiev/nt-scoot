@@ -185,6 +185,7 @@
 .features {
   padding-top: 20px;
   padding-bottom: 200px;
+  overflow: hidden;
 }
 
 .features__list {
@@ -229,13 +230,13 @@
 .feature--city::after {
   left: -550px;
   width: 735px;
-  background-image: url('../img/feature-arrow-city.svg');
+  background-image: url("../img/feature-arrow-city.svg");
 }
 
 .feature--money::after {
   right: -545px;
   width: 735px;
-  background-image: url('../img/feature-arrow-money.svg');
+  background-image: url("../img/feature-arrow-money.svg");
 }
 
 .feature__text-wrapper {
@@ -243,5 +244,45 @@
 }
 
 .feature-img {
+  display: block;
+}
+
+/* CTA */
+
+.cta {
+  padding: 102px 0;
+  background: url("../img/bg-cta.svg") center / cover no-repeat;
+  background-color: var(--color-text-primary);
+  overflow: hidden;
+}
+
+.cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-heading {
+  max-width: 415px;
+  color: #fff;
+}
+
+.cta__links {
+  display: flex;
+}
+
+.cta__link {
+  transition: filter 0.3s ease;
+}
+
+.cta__link:hover {
+  filter: invert(1);
+}
+
+.cta__link:not(:last-child) {
+  margin-right: 18px;
+}
+
+.cta__link-img {
   display: block;
 }
