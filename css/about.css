@@ -1,0 +1,109 @@
+/* ABOUT-INTRO */
+
+.about-intro {
+  background-image: url("../img/bg-about-intro.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .about-intro {
+    background-image: url("../img/bg-about-intro@2x.jpg");
+  }
+}
+
+/* ABOUT-FEATURES */
+
+.about-features {
+  padding: 120px 0;
+}
+
+.about-features .features__item:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.feature--mobility::after {
+  right: -500px;
+  width: 1079px;
+  background-image: url("../img/feature-arrow-mobility.svg");
+}
+
+.feature--urban::after {
+  left: -550px;
+  width: 735px;
+  background-image: url("../img/feature-arrow-urban.svg");
+}
+
+/* VALUES */
+
+.values {
+  text-align: center;
+}
+
+.values__heading {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  max-width: 540px;
+}
+
+.values__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: counter;
+}
+
+.values__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.value {
+  position: relative;
+  z-index: 1;
+  width: 350px;
+}
+
+.value::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 87px;
+  width: 240px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.value--tech::before {
+  background-image: url("../img/value-tech.jpg");
+}
+
+.value--integrity::before {
+  background-image: url("../img/value-integrity.jpg");
+}
+
+.value--community::before {
+  background-image: url("../img/value-community.jpg");
+}
+
+.value__counter {
+  position: absolute;
+  top: 254px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  padding: 34px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+}
+
+.value__title {
+  margin-bottom: 27px;
+}

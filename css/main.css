@@ -215,7 +215,7 @@
   content: "";
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 445px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -245,6 +245,7 @@
 
 .feature-img {
   display: block;
+  border-radius: 50%;
 }
 
 /* CTA */
@@ -320,4 +321,31 @@
 
 .social__link:hover {
   color: #fff;
+}
+
+
+/* INTRO */
+
+.intro {
+  padding: 72px 0;
+  background-color: rgba(47, 59, 89, 0.75);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.intro__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.intro__inner::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  width: 234px;
+  height: 62px;
+  background: url('../img/bg-hero-dots.svg') no-repeat center / contain;
 }

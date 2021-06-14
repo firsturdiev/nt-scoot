@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scoot Landing Page</title>
+  <title>About</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>
@@ -45,95 +46,76 @@
   <!-- SITE-CONTENT -->
 
   <main class="site-content">
-    <!-- HERO -->
+    <!-- ABOUT-INTRO -->
 
-    <section class="hero">
+    <section class="intro about-intro">
       <div class="container">
-        <div class="hero__inner">
-          <div class="text-wrapper hero__text-wrapper">
-            <h1 class="heading heading--primary hero-heading">Scooter sharing made simple</h1>
-            <p class="paragraph hero-paragraph">Scoot takes the hassle out of urban mobility. Our bikes are placed in
-              convenient
-              locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re
-              away!</p>
-            <a class="btn btn--primary btn--small hero-btn" href="#download">Get scootin</a>
-          </div>
+        <div class="intro__inner">
+          <h1 class="heading heading--primary">About</h1>
         </div>
       </div>
     </section>
 
 
-    <!-- STEPS -->
+    <!-- ABOUT-FEATURES -->
 
-    <section class="steps">
+    <section class="features about-features">
       <div class="container">
-        <h2 class="visually-hidden">Using steps</h2>
+        <ul class="features__list">
+          <li class="features__item feature feature--mobility">
+            <div class="text-wrapper feature__text-wrapper">
+              <h3 class="heading heading--secondary">Mobility for the digital era</h3>
+              <p class="paragraph">Getting around should be simple (and even fun!) for everyone. We embrace technology
+                to provide low cost, smart access to scooters at your fingertips.</p>
+            </div>
 
-        <ol class="steps__list">
-          <li class="steps__item step step--app">
-            <h3 class="step__title heading heading--quaternary">Locate with app</h3>
-            <p class="step__info">Use the app to find the nearest scooter to you. We are continuously placing scooters
-              in the areas with most demand, so one should never be too far away. </p>
+            <img class="feature-img" src="./img/feature-mobility.jpg" width="445" height="445"
+              srcset="./img/feature-mobility.jpg 1x, ./img/feature-mobility@2x.jpg 2x" aria-hidden="true">
           </li>
 
-          <li class="steps__item step step--scooter">
-            <h3 class="step__title heading heading--quaternary">Pick your scooter</h3>
-            <p class="step__info">We show the most important info for the scooters closest to you. So you know how much
-              charge they have left and can see roughly how much it will cost.</p>
-          </li>
+          <li class="features__item feature feature--urban">
+            <div class="text-wrapper feature__text-wrapper">
+              <h3 class="heading heading--secondary">Better urban living</h3>
+              <p class="paragraph">We’re helping connect cities and bring people closer together. Our scooters are also
+                fully-electric and we offset the minimal carbon footprint for each ride.</p>
+            </div>
 
-          <li class="steps__item step step--ride">
-            <h3 class="step__title heading heading--quaternary">Enjoy the ride</h3>
-            <p class="step__info">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet,
-              and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+            <img class="feature-img" src="./img/feature-urban.jpg" width="445" height="445"
+              srcset="./img/feature-urban.jpg 1x, ./img/feature-urban@2x.jpg 2x" aria-hidden="true">
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
 
-    <!-- FEATURES -->
+    <!-- VALUES -->
 
-    <section class="features">
+    <section class="values">
       <div class="container">
-        <ul class="features__list">
-          <li class="features__item feature feature--girl">
-            <div class="text-wrapper feature__text-wrapper">
-              <h3 class="heading heading--secondary">Easy to use
-                riding telemetry</h3>
-              <p class="paragraph">The Scoot app is available with riding telemetry. This means it can show you your
-                average speed, how long you've been using the scooter, your traveling distance, and many more things all
-                in an easy to use app.</p>
-              <a class="btn btn--primary" href="#">Learn more</a>
-            </div>
+        <h2 class="values__heading heading heading--secondary">Our values</h2>
 
-            <img class="feature-img" src="./img/feature-girl.png" width="445" height="445" aria-hidden="true">
+        <ol class="values__list">
+          <li class="values__item value value--tech">
+            <span class="value__counter heading heading--quaternary">01</span>
+            <h3 class="value__title heading heading--quanternary">Our tech</h3>
+            <p class="paragraph">We’re using cutting edge technology to drive accessible urban transportation forward.
+              Our fully electric scooters are a joy to ride!</p>
           </li>
 
-          <li class="features__item feature feature--city">
-            <div class="text-wrapper feature__text-wrapper">
-              <h3 class="heading heading--secondary">Coming to a city near you</h3>
-              <p class="paragraph">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to
-                let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities
-                over the coming year.</p>
-              <a class="btn btn--primary" href="#">Learn more</a>
-            </div>
-
-            <img class="feature-img" src="./img/feature-city.png" width="445" height="445" aria-hidden="true">
+          <li class="values__item value value--integrity">
+            <span class="value__counter heading heading--quaternary">02</span>
+            <h3 class="value__title heading heading--quanternary">Our integrity</h3>
+            <p class="paragraph">We are fully committed to deliver a great yet safe, sustainable micro-mobility
+              experience in every city we serve.</p>
           </li>
 
-          <li class="features__item feature feature--money">
-            <div class="text-wrapper feature__text-wrapper">
-              <h3 class="heading heading--secondary">Zero hassle payments</h3>
-              <p class="paragraph">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to
-                let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities
-                over the coming year.</p>
-              <a class="btn btn--primary" href="#">Learn more</a>
-            </div>
-
-            <img class="feature-img" src="./img/feature-money.png" width="445" height="445" aria-hidden="true">
+          <li class="values__item value value--community">
+            <span class="value__counter heading heading--quaternary">03</span>
+            <h3 class="value__title heading heading--quanternary">Our community</h3>
+            <p class="paragraph">We support every community we serve. All workers are paid a living wage based on their
+              location and are Scoot employees.</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
 
