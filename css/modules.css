@@ -1,11 +1,89 @@
 /* VARIABLES */
 
 :root {
+  --color-text-primary: #495567;
+  --color-text-secondary: #939caa;
+  --color-yellow: #fcb72b;
+  --color-light-grey: #e5ecf4;
+  --color-snow: #f2f5f9;
+  --color-light-yellow: #fff4df;
 }
 
 /* REUSABLES */
 
-/* DEFAULT STYLES */
+.heading {
+  margin: 0;
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.heading--primary {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+}
+
+.heading--secondary {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+}
+
+.heading--tertiary {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+}
+
+.heading--quaternary {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+}
+
+.paragraph {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 48px;
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 3px solid;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  transition: 0.3s ease;
+  transition-property: color, background-color;
+}
+
+.btn--primary:hover {
+  color: var(--color-yellow);
+  background-color: transparent;
+}
+
+.btn--small {
+  padding: 14px 39px;
+}
+
+.text-wrapper .heading {
+  margin-bottom: 24px;
+}
+
+.text-wrapper .btn {
+  margin-top: 40px;
+}
+
+/* BASIC STYLES */
 
 *,
 *::after,
@@ -20,6 +98,13 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-text-secondary);
+  background-color: #fff;
 }
 
 img {
@@ -66,4 +151,24 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* @FONT-FACE */
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Bold.woff2") format("woff2"),
+    url("../fonts/SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"),
+    url("../fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
