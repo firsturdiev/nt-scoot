@@ -315,4 +315,9 @@
   display: flex;
   text-decoration: none;
   color: var(--color-yellow);
+  transition: color .3s ease;
+}
+
+.social__link:hover {
+  color: #fff;
 }
