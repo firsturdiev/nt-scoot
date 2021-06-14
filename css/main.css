@@ -95,7 +95,7 @@
   transform: translateY(-50%);
   width: 203px;
   height: 15px;
-  background: url("../img/bg-line-hero.svg") center / contain no-repeat;
+  background: url("../img/bg-hero-line.svg") center / contain no-repeat;
 }
 
 .hero-paragraph::after {
@@ -106,7 +106,7 @@
   z-index: -1;
   width: 452px;
   height: 151px;
-  background: url(../img/bg-arrow-hero.svg) center / contain no-repeat;
+  background: url(../img/bg-hero-arrow.svg) center / contain no-repeat;
 }
 
 .hero-btn {
@@ -116,7 +116,7 @@
 /* STEPS */
 
 .steps {
-  padding: 160px 0
+  padding: 160px 0;
 }
 
 .steps__list {
@@ -129,14 +129,14 @@
 }
 
 .steps__list::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 48px;
   left: -175px;
   z-index: -1;
   width: 974px;
   height: 15px;
-  background: url('../img/bg-steps-line.svg') center / contain no-repeat;
+  background: url("../img/bg-steps-line.svg") center / contain no-repeat;
 }
 
 .steps__item:not(:last-child) {
@@ -148,7 +148,7 @@
 }
 
 .step::before {
-  content: '';
+  content: "";
   display: block;
   width: 96px;
   height: 96px;
@@ -161,15 +161,15 @@
 }
 
 .step--app::before {
-  background-image: url('../img/icon-app.svg');
+  background-image: url("../img/icon-app.svg");
 }
 
 .step--scooter::before {
-  background-image: url('../img/icon-scooter.svg');
+  background-image: url("../img/icon-scooter.svg");
 }
 
 .step--ride::before {
-  background-image: url('../img/icon-ride.svg');
+  background-image: url("../img/icon-ride.svg");
 }
 
 .step__title {
@@ -182,3 +182,66 @@
 
 /* FEATURES */
 
+.features {
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 170px;
+}
+
+.feature {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.feature--girl::after {
+  right: -509px;
+  width: 1060px;
+  background-image: url("../img/feature-arrow-girl.svg");
+}
+
+.feature--city::after {
+  left: -550px;
+  width: 735px;
+  background-image: url('../img/feature-arrow-city.svg');
+}
+
+.feature--money::after {
+  right: -545px;
+  width: 735px;
+  background-image: url('../img/feature-arrow-money.svg');
+}
+
+.feature__text-wrapper {
+  max-width: 445px;
+}
+
+.feature-img {
+  display: block;
+}
