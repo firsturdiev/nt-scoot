@@ -351,7 +351,7 @@
   z-index: 1;
 }
 
-.intro__inner::before {
+.intro__inner::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -416,6 +416,23 @@
   background-image: url("../img/value-community.jpg");
 }
 
+.value__counter {
+  position: absolute;
+  top: 254px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  padding: 34px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+}
+
+.value__title {
+  margin-bottom: 27px;
+}
+
+/* RETINA BACKGROUNDS */
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-moz-min-device-pixel-ratio: 2),
@@ -434,19 +451,4 @@
   .value--community::before {
     background-image: url("../img/value-community@2x.jpg");
   }
-}
-
-.value__counter {
-  position: absolute;
-  top: 254px;
-  left: 50%;
-  z-index: 1;
-  transform: translateX(-50%);
-  padding: 34px;
-  background-color: var(--color-yellow);
-  border-radius: 50%;
-}
-
-.value__title {
-  margin-bottom: 27px;
 }
