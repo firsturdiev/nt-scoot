@@ -54,6 +54,7 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: capitalize;
+  white-space: nowrap;
   border: 3px solid;
   cursor: pointer;
 }

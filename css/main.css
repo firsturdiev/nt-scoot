@@ -54,6 +54,18 @@
   overflow: hidden;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/bg-hero@2x.jpg");
+  }
+}
+
 .hero__inner {
   position: relative;
   z-index: 1;
@@ -402,6 +414,26 @@
 
 .value--community::before {
   background-image: url("../img/value-community.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .value--tech::before {
+    background-image: url("../img/value-tech@2x.jpg");
+  }
+
+  .value--integrity::before {
+    background-image: url("../img/value-integrity@2x.jpg");
+  }
+
+  .value--community::before {
+    background-image: url("../img/value-community@2x.jpg");
+  }
 }
 
 .value__counter {

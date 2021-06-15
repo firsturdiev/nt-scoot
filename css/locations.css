@@ -1,0 +1,46 @@
+/* LOCATIONS-INTRO */
+
+.locations-intro {
+  background-image: url("../img/bg-locations-intro.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-moz-min-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .locations-intro {
+    background-image: url("../img/bg-locations-intro@2x.jpg");
+  }
+}
+
+/* LOCATIONS */
+
+.locations {
+  padding: 120px 0; 
+}
+
+.locations__map {
+  margin-bottom: 120px;
+}
+
+.locations__map-img {
+  display: block;
+}
+
+.locations__cta {
+  display: flex;
+  align-items: center;
+}
+
+.locations__cta-heading {
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.locations__cta-info {
+  max-width: 445px;
+  margin-right: 105px;
+}
