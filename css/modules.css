@@ -76,6 +76,10 @@
   padding: 14px 39px;
 }
 
+.btn--large {
+  padding: 14px 67px;
+}
+
 .text-wrapper .heading {
   margin-bottom: 24px;
 }
